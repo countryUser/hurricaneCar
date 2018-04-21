@@ -11,8 +11,8 @@
 
 @interface AuthentificationViewController ()<TZImagePickerControllerDelegate>{
     int _type; // 0-正面，1-反面
-    BOOL isDoneLicence_1; //正面选择完毕
-    BOOL isDoneLicence_2; //反面选择完毕
+    BOOL _isDoneLicence_1; //正面选择完毕
+    BOOL _isDoneLicence_2; //反面选择完毕
 }
 @property (weak, nonatomic) IBOutlet UIImageView *drivingLicence_1; //驾驶证正页图片
 @property (weak, nonatomic) IBOutlet UILabel *statusLincence_1;
@@ -88,6 +88,7 @@
     UIImage *image = [imageArray firstObject];
     if (_type == 0) {
         self.drivingLicence_1.image = image;
+        _isDoneLicence_1 = YES;
     }else if (_type == 1){
         self.drivingLicence_2.image = image;
     }
