@@ -10,21 +10,24 @@
 
 #import "AFNetworking.h"
 
-
-@interface SocketTool()
-
-@property(nonatomic, strong) AFHTTPSessionManager *sessionManager;
-
-@end
-
 static NSString *urlStr_insertUser = @"http://47.100.24.146:8000/userinfo/insertUserInfo"; //新增用户的url
 static NSString *uelStr_getUser = @"http://47.100.24.146:8000/userinfo/getUserInfo"; //获取用户信息的url
 static NSString *urlStr_updateUser = @"http://47.100.24.146:8000/userinfo/updateUserInfo"; //更新用户的url
+
+@interface SocketTool()
+{
+    NSString *urlStr_getCar;
+}
+@property(nonatomic, strong) AFHTTPSessionManager *sessionManager;
+
+@end
 
 @implementation SocketTool
 
 -(instancetype)init{
     if (self = [super init]) {
+        urlStr_getCar = http(@"carinfo/getCarInfo");
+        
         _sessionManager = [AFHTTPSessionManager manager];
         _sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer]; ////更改响应默认的解析方式为字符串解析
     }
@@ -64,6 +67,30 @@ static NSString *urlStr_updateUser = @"http://47.100.24.146:8000/userinfo/update
                       NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject
                                                                           options:NSJSONReadingMutableContainers error:nil];
                       
+                      if(self.delegate){
+                          [self.delegate registerResult:YES withData:dic];
+                      }else{
+                          NSLog(@"未设置代理，注册网络请求成功");
+                      }
+                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                     if (self.delegate) {
+                         [self.delegate registerResult:NO withData:nil];
+                     }else{
+                         NSLog(@"未设置代理，注册网络请求失败");
+                     }
+                 }];
+}
+
+-(void)getCarListWithDelegate:(id)delegate{
+    self.delegate = delegate;
+    
+    NSDictionary *param = @{};
+    [_sessionManager POST:urlStr_getCar
+               parameters:param
+                 progress:nil
+                  success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                      NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject
+                                                                          options:NSJSONReadingMutableContainers error:nil];
                       if(self.delegate){
                           [self.delegate registerResult:YES withData:dic];
                       }else{

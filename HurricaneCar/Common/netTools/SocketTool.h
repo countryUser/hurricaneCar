@@ -29,4 +29,7 @@
 /// 注册
 -(void)registerUser:(NSString *)name pass:(NSString *)password;
 
+///获取车列表
+-(void)getCarListWithDelegate:(id)delegate;
+
 @end

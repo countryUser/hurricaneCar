@@ -7,7 +7,7 @@
 //
 //  精品推荐的cell
 #import <UIKit/UIKit.h>
-
+#import "Car.h"
 @interface RecomendTableViewCell : UITableViewCell
-
+@property(nonatomic, strong) Car *car;
 @end

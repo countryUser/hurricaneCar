@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 
 #import "LoginViewController.h"
+#import "ChoiceViewController.h"
+#import "OrderViewController.h"
+#import "CollectViewController.h"
+#import "MineViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +26,30 @@
     self.window = [[UIWindow alloc] initWithFrame:ScreenBound];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    LoginViewController *loginVC = [[LoginViewController alloc] init];
-    self.window.rootViewController = loginVC;
+//    LoginViewController *loginVC = [[LoginViewController alloc] init];
+//    self.window.rootViewController = loginVC;
     
+    UITabBarController *tab = [[UITabBarController alloc] init];
+    
+
+    ChoiceViewController *choice = [[ChoiceViewController alloc] initWithNibName:@"ChoiceViewController" bundle:nil];
+    choice.title = @"选车";
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:choice];
+    
+    OrderViewController *order = [[OrderViewController alloc] initWithNibName:@"OrderViewController" bundle:nil];
+    order.title = @"订单";
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:order];
+    
+    CollectViewController *collect = [[CollectViewController alloc] initWithNibName:@"CollectViewController" bundle:nil];
+    collect.title = @"车库";
+    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:collect];
+    
+    MineViewController *mine = [[MineViewController alloc] initWithNibName:@"MineViewController" bundle:nil];
+    mine.title = @"我的";
+    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:mine];
+    [tab setViewControllers:@[nav1, nav2, nav3, nav4]];
+    
+    self.window.rootViewController = tab;
     [self.window makeKeyAndVisible];
     return YES;
 }

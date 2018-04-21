@@ -8,7 +8,7 @@
 
 #import "MineViewController.h"
 #import "LoginViewController.h"
-
+#import "AuthentificationViewController.h"
 @interface MineViewController ()
 
 @property(nonatomic, strong) NSArray *infoArr;
@@ -24,6 +24,8 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.title = @"个人资料";
+    // 隐藏导航条
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -70,5 +72,15 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //TODO..
+    if (indexPath.row == 0) { //钱包
+        
+    }else if(indexPath.row == 1){ //信息认证
+        self.hidesBottomBarWhenPushed = YES;
+        AuthentificationViewController *autVc = [[AuthentificationViewController alloc] initWithNibName:@"AuthentificationViewController" bundle:nil];
+        [self.navigationController pushViewController:autVc animated:YES];
+        self.hidesBottomBarWhenPushed = NO;
+        
+        
+    }
 }
 @end

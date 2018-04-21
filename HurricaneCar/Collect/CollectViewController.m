@@ -29,6 +29,9 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationItem.title = @"收藏";
+    // 隐藏导航条
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
     self.navigationController.navigationBar.barTintColor = [UIColor redColor];
     self.navigationController.navigationBar.translucent = NO;
     

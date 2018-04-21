@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ChoiceViewController : UIViewController
-
+@property (strong, nonatomic) UITableView *tableView;
 @end
