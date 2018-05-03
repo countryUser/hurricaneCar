@@ -50,12 +50,13 @@
 
 
 #pragma mark ---- SocketResultDelegate
--(void)registerResult:(BOOL)success withData:(NSDictionary *)data{
-    if(success){
+-(void)getCarList:(BOOL)success withData:(NSDictionary *)data{
+    if (success) {
         NSArray *arr = data[@"ret_val"];
-
         self.carsArr = [Car mj_objectArrayWithKeyValuesArray:arr];
         [self.tableView reloadData];
+    }else{
+        
     }
 }
 

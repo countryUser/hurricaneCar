@@ -58,6 +58,11 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="carImage" destination="H4S-uh-oae" id="4jH-3v-DPE"/>
+                <outlet property="carName" destination="fuq-Jx-3Ro" id="8Zu-15-Wdk"/>
+                <outlet property="priceLabel" destination="d4R-tF-iN6" id="ozw-5R-us5"/>
+            </connections>
             <point key="canvasLocation" x="25" y="26.5"/>
         </tableViewCell>
     </objects>

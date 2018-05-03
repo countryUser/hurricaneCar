@@ -46,12 +46,12 @@
 ///退出登录
 - (IBAction)logout:(id)sender {
     //TODO...
-    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    for (UIView *vc in window.subviews) {
-        [vc removeFromSuperview];
-    }
+    [HCArchive saveLoginStatus:NO]; //退出登录
+    
+    self.hidesBottomBarWhenPushed = YES;
     LoginViewController *login = [[LoginViewController alloc] init];
-    window.rootViewController = login;
+    [self.navigationController pushViewController:login animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 
 

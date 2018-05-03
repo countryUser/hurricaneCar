@@ -7,6 +7,8 @@
 //
 
 #import "CarInfoViewController.h"
+#import "LoginViewController.h"
+#import "SelectionCalandarViewController.h"
 
 @interface CarInfoViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *carBrand; //品牌
@@ -29,9 +31,6 @@
     
     self.bottomView.layer.cornerRadius = 15;
     self.buyBtn.layer.cornerRadius = 15;
-    
-    
-    
 }
 
 - (void)viewDidLoad {
@@ -65,6 +64,19 @@
 #pragma mark
 //租车Action
 - (IBAction)buyAction:(UIButton *)sender {
+    self.hidesBottomBarWhenPushed = YES;
+    SelectionCalandarViewController *calandarVC = [[SelectionCalandarViewController alloc] initWithNibName:@"SelectionCalandarViewController" bundle:nil];
+    [self.navigationController pushViewController:calandarVC animated:YES];
+    /****
+    if (![HCArchive unLoginStatus]) {
+        NSLog(@"未登录");
+        self.hidesBottomBarWhenPushed = YES;
+        LoginViewController *loginVC = [[LoginViewController alloc] init];
+        [self.navigationController pushViewController:loginVC animated:YES];
+    }else{
+        NSLog(@"已经登录");
+    }
+     ****/
 }
 //取消
 - (IBAction)cancelAction:(UIButton *)sender {

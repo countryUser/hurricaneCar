@@ -11,10 +11,14 @@
  */
 #import <Foundation/Foundation.h>
 
+#import "Order.h"
+
 @protocol SocketResultDelegate <NSObject>
 
 @optional
 -(void)registerResult:(BOOL)success withData:(NSDictionary *)data;
+-(void)getCarList:(BOOL)success withData:(NSDictionary *)data;
+-(void)createOrderSuccess:(BOOL)success withData:(NSDictionary *)data;
 @end
 
 @interface SocketTool : NSObject
@@ -31,5 +35,8 @@
 
 ///获取车列表
 -(void)getCarListWithDelegate:(id)delegate;
-
+///下单请求
+-(void)createOrderWithDelgete:(id)delegate order:(Order *)order;
+///付款
+-(void)fukuanWithDelegate:(id)delegate uid:(NSInteger)orderId amount:(double)amount;
 @end

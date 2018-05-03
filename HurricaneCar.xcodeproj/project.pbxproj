@@ -45,6 +45,22 @@
 		1873E969208B2891003D8B39 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E959208B2890003D8B39 /* TZLocationManager.m */; };
 		1873E96A208B2891003D8B39 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E95A208B2890003D8B39 /* TZGifPhotoPreviewController.m */; };
 		1873E970208B319E003D8B39 /* noPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 1873E96F208B319E003D8B39 /* noPicture.png */; };
+		1873E973208B7280003D8B39 /* HCArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E972208B7280003D8B39 /* HCArchive.m */; };
+		1873E99C208CDE97003D8B39 /* SelectionCalandarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E99A208CDE97003D8B39 /* SelectionCalandarViewController.m */; };
+		1873E99D208CDE97003D8B39 /* SelectionCalandarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1873E99B208CDE97003D8B39 /* SelectionCalandarViewController.xib */; };
+		1873E9C3208CDF27003D8B39 /* JTCalendarSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E99F208CDF27003D8B39 /* JTCalendarSettings.m */; };
+		1873E9C4208CDF27003D8B39 /* JTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9A0208CDF27003D8B39 /* JTDateHelper.m */; };
+		1873E9C5208CDF27003D8B39 /* JTCalendarScrollManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9A6208CDF27003D8B39 /* JTCalendarScrollManager.m */; };
+		1873E9C6208CDF27003D8B39 /* JTCalendarDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9A7208CDF27003D8B39 /* JTCalendarDelegateManager.m */; };
+		1873E9C7208CDF27003D8B39 /* JTCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9A9208CDF27003D8B39 /* JTCalendarManager.m */; };
+		1873E9C8208CDF27003D8B39 /* JTVerticalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9AE208CDF27003D8B39 /* JTVerticalCalendarView.m */; };
+		1873E9C9208CDF27003D8B39 /* JTCalendarWeekDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9B1208CDF27003D8B39 /* JTCalendarWeekDayView.m */; };
+		1873E9CA208CDF27003D8B39 /* JTHorizontalCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9B3208CDF27003D8B39 /* JTHorizontalCalendarView.m */; };
+		1873E9CB208CDF27003D8B39 /* JTCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9B4208CDF27003D8B39 /* JTCalendarWeekView.m */; };
+		1873E9CC208CDF27003D8B39 /* JTCalendarDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9B6208CDF27003D8B39 /* JTCalendarDayView.m */; };
+		1873E9CD208CDF27003D8B39 /* JTCalendarPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9B7208CDF27003D8B39 /* JTCalendarPageView.m */; };
+		1873E9CE208CDF27003D8B39 /* JTCalendarMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873E9B9208CDF27003D8B39 /* JTCalendarMenuView.m */; };
+		1873E9CF208CDF27003D8B39 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1873E9C2208CDF27003D8B39 /* Info.plist */; };
 		1879BED1200201B500C938EC /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879BEC5200201B500C938EC /* AFHTTPSessionManager.m */; };
 		1879BED2200201B500C938EC /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879BEC8200201B500C938EC /* AFNetworkReachabilityManager.m */; };
 		1879BED3200201B500C938EC /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1879BECA200201B500C938EC /* AFSecurityPolicy.m */; };
@@ -76,6 +92,18 @@
 		18886DE91FE95F0E00851BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18886DE81FE95F0E00851BD2 /* Assets.xcassets */; };
 		18886DEC1FE95F0E00851BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18886DEA1FE95F0E00851BD2 /* LaunchScreen.storyboard */; };
 		18886DFF1FEAC4DC00851BD2 /* index.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18886DFE1FEAC4DC00851BD2 /* index.jpg */; };
+		18CE85C020935F3E00B97C23 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85BE20935F3E00B97C23 /* AlipaySDK.framework */; };
+		18CE85C120935F3F00B97C23 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18CE85BF20935F3E00B97C23 /* AlipaySDK.bundle */; };
+		18CE85C42093606700B97C23 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85C32093606700B97C23 /* CoreMotion.framework */; };
+		18CE85C62093607000B97C23 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85C52093607000B97C23 /* CFNetwork.framework */; };
+		18CE85C82093607C00B97C23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85C72093607C00B97C23 /* CoreGraphics.framework */; };
+		18CE85CA2093608D00B97C23 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85C92093608D00B97C23 /* CoreText.framework */; };
+		18CE85CC2093609800B97C23 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85CB2093609800B97C23 /* CoreTelephony.framework */; };
+		18CE85CE209360A300B97C23 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85CD209360A300B97C23 /* QuartzCore.framework */; };
+		18CE85D0209360B200B97C23 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85CF209360B200B97C23 /* SystemConfiguration.framework */; };
+		18CE85D2209360BB00B97C23 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85D1209360BB00B97C23 /* libz.tbd */; };
+		18CE85D4209360C700B97C23 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CE85D3209360C700B97C23 /* libc++.tbd */; };
+		18CE85D72098AC6600B97C23 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CE85D62098AC6600B97C23 /* Order.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +178,44 @@
 		1873E95A208B2890003D8B39 /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
 		1873E95B208B2890003D8B39 /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
 		1873E96F208B319E003D8B39 /* noPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noPicture.png; sourceTree = "<group>"; };
+		1873E971208B7280003D8B39 /* HCArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCArchive.h; sourceTree = "<group>"; };
+		1873E972208B7280003D8B39 /* HCArchive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCArchive.m; sourceTree = "<group>"; };
+		1873E999208CDE97003D8B39 /* SelectionCalandarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionCalandarViewController.h; sourceTree = "<group>"; };
+		1873E99A208CDE97003D8B39 /* SelectionCalandarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionCalandarViewController.m; sourceTree = "<group>"; };
+		1873E99B208CDE97003D8B39 /* SelectionCalandarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectionCalandarViewController.xib; sourceTree = "<group>"; };
+		1873E99F208CDF27003D8B39 /* JTCalendarSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarSettings.m; sourceTree = "<group>"; };
+		1873E9A0208CDF27003D8B39 /* JTDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDateHelper.m; sourceTree = "<group>"; };
+		1873E9A1208CDF27003D8B39 /* JTCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarManager.h; sourceTree = "<group>"; };
+		1873E9A2208CDF27003D8B39 /* JTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendar.h; sourceTree = "<group>"; };
+		1873E9A4208CDF27003D8B39 /* JTCalendarDelegateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegateManager.h; sourceTree = "<group>"; };
+		1873E9A5208CDF27003D8B39 /* JTCalendarScrollManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarScrollManager.h; sourceTree = "<group>"; };
+		1873E9A6208CDF27003D8B39 /* JTCalendarScrollManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarScrollManager.m; sourceTree = "<group>"; };
+		1873E9A7208CDF27003D8B39 /* JTCalendarDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDelegateManager.m; sourceTree = "<group>"; };
+		1873E9A8208CDF27003D8B39 /* JTCalendarSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarSettings.h; sourceTree = "<group>"; };
+		1873E9A9208CDF27003D8B39 /* JTCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarManager.m; sourceTree = "<group>"; };
+		1873E9AA208CDF27003D8B39 /* JTDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDateHelper.h; sourceTree = "<group>"; };
+		1873E9AB208CDF27003D8B39 /* JTCalendarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDelegate.h; sourceTree = "<group>"; };
+		1873E9AD208CDF27003D8B39 /* JTCalendarDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDayView.h; sourceTree = "<group>"; };
+		1873E9AE208CDF27003D8B39 /* JTVerticalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTVerticalCalendarView.m; sourceTree = "<group>"; };
+		1873E9AF208CDF27003D8B39 /* JTCalendarWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekView.h; sourceTree = "<group>"; };
+		1873E9B0208CDF27003D8B39 /* JTCalendarPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPageView.h; sourceTree = "<group>"; };
+		1873E9B1208CDF27003D8B39 /* JTCalendarWeekDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekDayView.m; sourceTree = "<group>"; };
+		1873E9B2208CDF27003D8B39 /* JTCalendarMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarMenuView.h; sourceTree = "<group>"; };
+		1873E9B3208CDF27003D8B39 /* JTHorizontalCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHorizontalCalendarView.m; sourceTree = "<group>"; };
+		1873E9B4208CDF27003D8B39 /* JTCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarWeekView.m; sourceTree = "<group>"; };
+		1873E9B5208CDF27003D8B39 /* JTVerticalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTVerticalCalendarView.h; sourceTree = "<group>"; };
+		1873E9B6208CDF27003D8B39 /* JTCalendarDayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarDayView.m; sourceTree = "<group>"; };
+		1873E9B7208CDF27003D8B39 /* JTCalendarPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarPageView.m; sourceTree = "<group>"; };
+		1873E9B8208CDF27003D8B39 /* JTHorizontalCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHorizontalCalendarView.h; sourceTree = "<group>"; };
+		1873E9B9208CDF27003D8B39 /* JTCalendarMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTCalendarMenuView.m; sourceTree = "<group>"; };
+		1873E9BA208CDF27003D8B39 /* JTCalendarWeekDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDayView.h; sourceTree = "<group>"; };
+		1873E9BC208CDF27003D8B39 /* JTCalendarWeek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeek.h; sourceTree = "<group>"; };
+		1873E9BD208CDF27003D8B39 /* JTContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTContent.h; sourceTree = "<group>"; };
+		1873E9BE208CDF27003D8B39 /* JTCalendarPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarPage.h; sourceTree = "<group>"; };
+		1873E9BF208CDF27003D8B39 /* JTCalendarWeekDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarWeekDay.h; sourceTree = "<group>"; };
+		1873E9C0208CDF27003D8B39 /* JTCalendarDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTCalendarDay.h; sourceTree = "<group>"; };
+		1873E9C1208CDF27003D8B39 /* JTMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMenu.h; sourceTree = "<group>"; };
+		1873E9C2208CDF27003D8B39 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1879BEC4200201B500C938EC /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		1879BEC5200201B500C938EC /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		1879BEC6200201B500C938EC /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -204,6 +270,19 @@
 		18886DF71FE9620900851BD2 /* define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = define.h; sourceTree = "<group>"; };
 		18886DFC1FEAC2D500851BD2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18886DFE1FEAC4DC00851BD2 /* index.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = index.jpg; sourceTree = "<group>"; };
+		18CE85BE20935F3E00B97C23 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		18CE85BF20935F3E00B97C23 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		18CE85C32093606700B97C23 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		18CE85C52093607000B97C23 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		18CE85C72093607C00B97C23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18CE85C92093608D00B97C23 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		18CE85CB2093609800B97C23 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		18CE85CD209360A300B97C23 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18CE85CF209360B200B97C23 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18CE85D1209360BB00B97C23 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		18CE85D3209360C700B97C23 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		18CE85D52098AC6600B97C23 /* Order.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		18CE85D62098AC6600B97C23 /* Order.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +290,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CE85D4209360C700B97C23 /* libc++.tbd in Frameworks */,
+				18CE85D2209360BB00B97C23 /* libz.tbd in Frameworks */,
+				18CE85D0209360B200B97C23 /* SystemConfiguration.framework in Frameworks */,
+				18CE85CE209360A300B97C23 /* QuartzCore.framework in Frameworks */,
+				18CE85CC2093609800B97C23 /* CoreTelephony.framework in Frameworks */,
+				18CE85CA2093608D00B97C23 /* CoreText.framework in Frameworks */,
+				18CE85C82093607C00B97C23 /* CoreGraphics.framework in Frameworks */,
+				18CE85C62093607000B97C23 /* CFNetwork.framework in Frameworks */,
+				18CE85C42093606700B97C23 /* CoreMotion.framework in Frameworks */,
+				18CE85C020935F3E00B97C23 /* AlipaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +311,8 @@
 			children = (
 				1873E935208B0CDB003D8B39 /* views */,
 				185E1C61200204D7005CFAAE /* netTools */,
+				1873E971208B7280003D8B39 /* HCArchive.h */,
+				1873E972208B7280003D8B39 /* HCArchive.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -269,6 +360,8 @@
 				1873E90D2088F3D6003D8B39 /* User.m */,
 				1873E9102088F46B003D8B39 /* Car.h */,
 				1873E9112088F46B003D8B39 /* Car.m */,
+				18CE85D52098AC6600B97C23 /* Order.h */,
+				18CE85D62098AC6600B97C23 /* Order.m */,
 			);
 			path = Damion;
 			sourceTree = "<group>";
@@ -347,9 +440,75 @@
 			path = TZImagePickerController;
 			sourceTree = "<group>";
 		};
+		1873E99E208CDF27003D8B39 /* JTCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				1873E99F208CDF27003D8B39 /* JTCalendarSettings.m */,
+				1873E9A0208CDF27003D8B39 /* JTDateHelper.m */,
+				1873E9A1208CDF27003D8B39 /* JTCalendarManager.h */,
+				1873E9A2208CDF27003D8B39 /* JTCalendar.h */,
+				1873E9A3208CDF27003D8B39 /* Managers */,
+				1873E9A8208CDF27003D8B39 /* JTCalendarSettings.h */,
+				1873E9A9208CDF27003D8B39 /* JTCalendarManager.m */,
+				1873E9AA208CDF27003D8B39 /* JTDateHelper.h */,
+				1873E9AB208CDF27003D8B39 /* JTCalendarDelegate.h */,
+				1873E9AC208CDF27003D8B39 /* Views */,
+				1873E9BB208CDF27003D8B39 /* Protocols */,
+				1873E9C2208CDF27003D8B39 /* Info.plist */,
+			);
+			path = JTCalendar;
+			sourceTree = "<group>";
+		};
+		1873E9A3208CDF27003D8B39 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1873E9A4208CDF27003D8B39 /* JTCalendarDelegateManager.h */,
+				1873E9A5208CDF27003D8B39 /* JTCalendarScrollManager.h */,
+				1873E9A6208CDF27003D8B39 /* JTCalendarScrollManager.m */,
+				1873E9A7208CDF27003D8B39 /* JTCalendarDelegateManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1873E9AC208CDF27003D8B39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1873E9AD208CDF27003D8B39 /* JTCalendarDayView.h */,
+				1873E9AE208CDF27003D8B39 /* JTVerticalCalendarView.m */,
+				1873E9AF208CDF27003D8B39 /* JTCalendarWeekView.h */,
+				1873E9B0208CDF27003D8B39 /* JTCalendarPageView.h */,
+				1873E9B1208CDF27003D8B39 /* JTCalendarWeekDayView.m */,
+				1873E9B2208CDF27003D8B39 /* JTCalendarMenuView.h */,
+				1873E9B3208CDF27003D8B39 /* JTHorizontalCalendarView.m */,
+				1873E9B4208CDF27003D8B39 /* JTCalendarWeekView.m */,
+				1873E9B5208CDF27003D8B39 /* JTVerticalCalendarView.h */,
+				1873E9B6208CDF27003D8B39 /* JTCalendarDayView.m */,
+				1873E9B7208CDF27003D8B39 /* JTCalendarPageView.m */,
+				1873E9B8208CDF27003D8B39 /* JTHorizontalCalendarView.h */,
+				1873E9B9208CDF27003D8B39 /* JTCalendarMenuView.m */,
+				1873E9BA208CDF27003D8B39 /* JTCalendarWeekDayView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1873E9BB208CDF27003D8B39 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1873E9BC208CDF27003D8B39 /* JTCalendarWeek.h */,
+				1873E9BD208CDF27003D8B39 /* JTContent.h */,
+				1873E9BE208CDF27003D8B39 /* JTCalendarPage.h */,
+				1873E9BF208CDF27003D8B39 /* JTCalendarWeekDay.h */,
+				1873E9C0208CDF27003D8B39 /* JTCalendarDay.h */,
+				1873E9C1208CDF27003D8B39 /* JTMenu.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		1879BEC2200201B500C938EC /* librarys */ = {
 			isa = PBXGroup;
 			children = (
+				18CE85BD20935EFF00B97C23 /* ZhiFu */,
+				1873E99E208CDF27003D8B39 /* JTCalendar */,
 				1873E93E208B2890003D8B39 /* TZImagePickerController */,
 				1873E913208AE3F4003D8B39 /* MJExtension */,
 				1879BEC3200201B500C938EC /* AFNetworking */,
@@ -450,6 +609,9 @@
 				1879BEF72002035800C938EC /* OrderViewController.h */,
 				1879BEF82002035800C938EC /* OrderViewController.m */,
 				1879BEF92002035800C938EC /* OrderViewController.xib */,
+				1873E999208CDE97003D8B39 /* SelectionCalandarViewController.h */,
+				1873E99A208CDE97003D8B39 /* SelectionCalandarViewController.m */,
+				1873E99B208CDE97003D8B39 /* SelectionCalandarViewController.xib */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -459,6 +621,7 @@
 			children = (
 				18886DDB1FE95F0E00851BD2 /* HurricaneCar */,
 				18886DDA1FE95F0E00851BD2 /* Products */,
+				18CE85C22093606700B97C23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -473,6 +636,7 @@
 		18886DDB1FE95F0E00851BD2 /* HurricaneCar */ = {
 			isa = PBXGroup;
 			children = (
+				18CE85BB20920E5100B97C23 /* ZhiFu */,
 				1873E90B2088F3BC003D8B39 /* Damion */,
 				1873E9012086339B003D8B39 /* Others */,
 				1879BED82002035800C938EC /* Choice */,
@@ -516,6 +680,46 @@
 			path = res;
 			sourceTree = "<group>";
 		};
+		18CE85BB20920E5100B97C23 /* ZhiFu */ = {
+			isa = PBXGroup;
+			children = (
+				18CE85BC20920E5E00B97C23 /* ZhiFubao */,
+			);
+			path = ZhiFu;
+			sourceTree = "<group>";
+		};
+		18CE85BC20920E5E00B97C23 /* ZhiFubao */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZhiFubao;
+			sourceTree = "<group>";
+		};
+		18CE85BD20935EFF00B97C23 /* ZhiFu */ = {
+			isa = PBXGroup;
+			children = (
+				18CE85BF20935F3E00B97C23 /* AlipaySDK.bundle */,
+				18CE85BE20935F3E00B97C23 /* AlipaySDK.framework */,
+			);
+			path = ZhiFu;
+			sourceTree = "<group>";
+		};
+		18CE85C22093606700B97C23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18CE85D3209360C700B97C23 /* libc++.tbd */,
+				18CE85D1209360BB00B97C23 /* libz.tbd */,
+				18CE85CF209360B200B97C23 /* SystemConfiguration.framework */,
+				18CE85CD209360A300B97C23 /* QuartzCore.framework */,
+				18CE85CB2093609800B97C23 /* CoreTelephony.framework */,
+				18CE85C92093608D00B97C23 /* CoreText.framework */,
+				18CE85C72093607C00B97C23 /* CoreGraphics.framework */,
+				18CE85C52093607000B97C23 /* CFNetwork.framework */,
+				18CE85C32093606700B97C23 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -547,6 +751,7 @@
 				TargetAttributes = {
 					18886DD81FE95F0D00851BD2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PSN5L59HKN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -577,10 +782,13 @@
 				1879BF012002035800C938EC /* ChoiceCityViewController.xib in Resources */,
 				1879BEFD2002035800C938EC /* RecomendTableViewCell.xib in Resources */,
 				18886DFF1FEAC4DC00851BD2 /* index.jpg in Resources */,
+				1873E99D208CDE97003D8B39 /* SelectionCalandarViewController.xib in Resources */,
 				18886DEC1FE95F0E00851BD2 /* LaunchScreen.storyboard in Resources */,
 				1879BF092002035800C938EC /* OrderTableViewCell.xib in Resources */,
 				1873E93D208B1FA7003D8B39 /* AuthentificationViewController.xib in Resources */,
 				1873E90A20863A2D003D8B39 /* CarInfoViewController.xib in Resources */,
+				1873E9CF208CDF27003D8B39 /* Info.plist in Resources */,
+				18CE85C120935F3F00B97C23 /* AlipaySDK.bundle in Resources */,
 				1879BF032002035800C938EC /* FindingViewController.xib in Resources */,
 				185E1C6A200262B1005CFAAE /* CollectTableViewCell.xib in Resources */,
 				1873E933208AE3F4003D8B39 /* Info.plist in Resources */,
@@ -605,12 +813,15 @@
 				185E1C69200262B1005CFAAE /* CollectTableViewCell.m in Sources */,
 				1879BED1200201B500C938EC /* AFHTTPSessionManager.m in Sources */,
 				1873E964208B2891003D8B39 /* TZProgressView.m in Sources */,
+				1873E9C6208CDF27003D8B39 /* JTCalendarDelegateManager.m in Sources */,
 				1879BED2200201B500C938EC /* AFNetworkReachabilityManager.m in Sources */,
 				1873E961208B2891003D8B39 /* UIView+Layout.m in Sources */,
 				18886DE41FE95F0E00851BD2 /* ViewController.m in Sources */,
+				1873E9C5208CDF27003D8B39 /* JTCalendarScrollManager.m in Sources */,
 				1879BEFA2002035800C938EC /* ChoiceViewController.m in Sources */,
 				1873E95D208B2891003D8B39 /* TZAssetCell.m in Sources */,
 				1879BF082002035800C938EC /* OrderTableViewCell.m in Sources */,
+				1873E9C8208CDF27003D8B39 /* JTVerticalCalendarView.m in Sources */,
 				1873E967208B2891003D8B39 /* TZPhotoPreviewCell.m in Sources */,
 				1873E968208B2891003D8B39 /* TZImagePickerController.m in Sources */,
 				1873E965208B2891003D8B39 /* TZImageManager.m in Sources */,
@@ -620,19 +831,28 @@
 				1873E962208B2891003D8B39 /* TZPhotoPreviewController.m in Sources */,
 				1873E90E2088F3D6003D8B39 /* User.m in Sources */,
 				1879BF042002035800C938EC /* LoginInputView.m in Sources */,
+				1873E9CC208CDF27003D8B39 /* JTCalendarDayView.m in Sources */,
 				1879BF002002035800C938EC /* ChoiceCityViewController.m in Sources */,
+				1873E99C208CDE97003D8B39 /* SelectionCalandarViewController.m in Sources */,
 				1879BED5200201B500C938EC /* AFURLResponseSerialization.m in Sources */,
 				1879BF052002035800C938EC /* LoginViewController.m in Sources */,
 				1873E95F208B2891003D8B39 /* TZAssetModel.m in Sources */,
+				1873E9C7208CDF27003D8B39 /* JTCalendarManager.m in Sources */,
 				1873E92B208AE3F4003D8B39 /* NSObject+MJKeyValue.m in Sources */,
 				1873E92F208AE3F4003D8B39 /* NSObject+MJProperty.m in Sources */,
+				1873E9CE208CDF27003D8B39 /* JTCalendarMenuView.m in Sources */,
+				1873E9C4208CDF27003D8B39 /* JTDateHelper.m in Sources */,
 				1873E92A208AE3F4003D8B39 /* MJPropertyType.m in Sources */,
 				185E1C64200204F9005CFAAE /* SocketTool.m in Sources */,
 				1873E92E208AE3F4003D8B39 /* MJExtensionConst.m in Sources */,
+				1873E9C3208CDF27003D8B39 /* JTCalendarSettings.m in Sources */,
+				1873E973208B7280003D8B39 /* HCArchive.m in Sources */,
 				18886DE11FE95F0E00851BD2 /* AppDelegate.m in Sources */,
+				1873E9CA208CDF27003D8B39 /* JTHorizontalCalendarView.m in Sources */,
 				1873E969208B2891003D8B39 /* TZLocationManager.m in Sources */,
 				1873E9122088F46B003D8B39 /* Car.m in Sources */,
 				1879BEFE2002035800C938EC /* CollectViewController.m in Sources */,
+				18CE85D72098AC6600B97C23 /* Order.m in Sources */,
 				1873E960208B2891003D8B39 /* NSBundle+TZImagePicker.m in Sources */,
 				1879BEFC2002035800C938EC /* RecomendTableViewCell.m in Sources */,
 				1879BF062002035800C938EC /* MineViewController.m in Sources */,
@@ -641,10 +861,12 @@
 				1879BED4200201B500C938EC /* AFURLRequestSerialization.m in Sources */,
 				1873E92D208AE3F4003D8B39 /* NSObject+MJCoding.m in Sources */,
 				1879BF0A2002035800C938EC /* OrderViewController.m in Sources */,
+				1873E9CB208CDF27003D8B39 /* JTCalendarWeekView.m in Sources */,
 				1873E938208B0CE6003D8B39 /* YSLoopBanner.m in Sources */,
 				1873E92C208AE3F4003D8B39 /* MJProperty.m in Sources */,
 				1873E96A208B2891003D8B39 /* TZGifPhotoPreviewController.m in Sources */,
 				1879BED3200201B500C938EC /* AFSecurityPolicy.m in Sources */,
+				1873E9C9208CDF27003D8B39 /* JTCalendarWeekDayView.m in Sources */,
 				1873E90920863A2D003D8B39 /* CarInfoViewController.m in Sources */,
 				1873E95E208B2891003D8B39 /* TZVideoPlayerController.m in Sources */,
 				1873E95C208B2891003D8B39 /* TZImageCropManager.m in Sources */,
@@ -653,6 +875,7 @@
 				1873E966208B2891003D8B39 /* TZPhotoPickerController.m in Sources */,
 				18886DDE1FE95F0E00851BD2 /* main.m in Sources */,
 				1873E93C208B1FA7003D8B39 /* AuthentificationViewController.m in Sources */,
+				1873E9CD208CDF27003D8B39 /* JTCalendarPageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,11 +993,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/apple/project/HurricaneCar/HurricaneCar/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = PSN5L59HKN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HurricaneCar/librarys/ZhiFu",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HurricaneCar/PrefixHeader.pch";
 				INFOPLIST_FILE = HurricaneCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JufengInc.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -782,11 +1012,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/apple/project/HurricaneCar/HurricaneCar/PrefixHeader.pch;
+				DEVELOPMENT_TEAM = PSN5L59HKN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HurricaneCar/librarys/ZhiFu",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HurricaneCar/PrefixHeader.pch";
 				INFOPLIST_FILE = HurricaneCar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JufengInc.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

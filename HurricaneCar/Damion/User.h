@@ -13,4 +13,7 @@
 @interface User : NSObject
 @property(nonatomic, assign) NSInteger userid;
 @property(nonatomic, strong) NSString *userName;
+
+@property(nonatomic, assign) BOOL isAuthentication; //是否认证，YES-已认证，NO-未认证
+
 @end

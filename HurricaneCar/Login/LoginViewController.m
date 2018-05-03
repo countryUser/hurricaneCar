@@ -37,7 +37,7 @@ const NSString *kBgImagePath = @"index.jpg";
     [self.view addSubview:_bgImageView];
     
     UIView *grayView = [[UIView alloc] initWithFrame:ScreenBound];
-    grayView.backgroundColor = [UIColor lightGrayColor];
+    grayView.backgroundColor = [UIColor blackColor];
     grayView.alpha = 0.3;
     [self.view addSubview:grayView];
     
@@ -50,13 +50,13 @@ const NSString *kBgImagePath = @"index.jpg";
     _registerView = [[RegisterView alloc] initWithFrame:CGRectMake(ScreenWidth+5, ScreenHeight * 0.3, ScreenWidth-10, ScreenHeight*0.4)];
     [self.view addSubview:_registerView];
     
-    __weak LoginViewController *_tmpWeakSelf;
+    __block  typeof(self) _tmpSelf = self;
     _loginInputView.loginBlock = ^(NSString *name, NSString *password){
         
-        [self login];
+        [_tmpSelf login];
     };
     _loginInputView.toRegisterBlock = ^(){
-        [self toRegisterView];
+        [_tmpSelf toRegisterView];
     };
     
     _registerView.registerBlock = ^(NSString *name, NSString *password){
@@ -85,24 +85,10 @@ const NSString *kBgImagePath = @"index.jpg";
 
 #pragma mark - 私有方法
 -(void)login{
-    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    for (UIView *vc in window.subviews) {
-        [vc removeFromSuperview];
-    }
-    UITabBarController *tab = [[UITabBarController alloc] init];
+    //TODO..登录判断
     
-    ChoiceViewController *choice = [[ChoiceViewController alloc] initWithNibName:@"ChoiceViewController" bundle:nil];
-    choice.tabBarItem.title = @"选车";
-    OrderViewController *order = [[OrderViewController alloc] initWithNibName:@"OrderViewController" bundle:nil];
-    order.tabBarItem.title = @"订单";
-
-    CollectViewController *collect = [[CollectViewController alloc] initWithNibName:@"CollectViewController" bundle:nil];
-    collect.title = @"车库";
-    UINavigationController *collectNav = [[UINavigationController alloc] initWithRootViewController:collect];
-    MineViewController *mine = [[MineViewController alloc] initWithNibName:@"MineViewController" bundle:nil];
-    mine.tabBarItem.title = @"我的";
-    [tab setViewControllers:@[choice, order, collectNav, mine]];
-    window.rootViewController = tab;
+    [HCArchive saveLoginStatus:YES]; //登录成功
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //跳转到注册界面
@@ -136,8 +122,10 @@ const NSString *kBgImagePath = @"index.jpg";
 -(void)registerResult:(BOOL)success withData:(NSDictionary *)data{
     if (!success) {
         NSLog(@"注册失败");
+        return ;
     }
-    
+    //注册成功。返回登录界面
+    [self backLoginView];
 }
 
 @end

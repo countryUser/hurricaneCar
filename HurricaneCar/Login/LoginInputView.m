@@ -42,13 +42,22 @@ const CGFloat kPaddingTB = 20; ///上下控件的间隔距离
         
         _userNameTF = [[UITextField alloc] initWithFrame:CGRectMake(kPaddingLR, 0, width, height)];
         _userNameTF.textColor = [UIColor whiteColor];
-        _userNameTF.layer.cornerRadius = 0.2;
-        _userNameTF.placeholder = @"请输入密码";
+        _userNameTF.layer.cornerRadius = 5;
+        _userNameTF.layer.borderWidth = 1;
+        _userNameTF.layer.borderColor = [UIColor whiteColor].CGColor;
+        _userNameTF.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, height)];
+        _userNameTF.leftViewMode = UITextFieldViewModeAlways;
+        _userNameTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入密码" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
         
         _passwordTF = [[UITextField alloc] initWithFrame:CGRectMake(kPaddingLR, CGRectGetMaxY(_userNameTF.frame)+kPaddingTB, width, height)];
         _passwordTF.textColor = [UIColor whiteColor];
-        _passwordTF.layer.cornerRadius = 0.2;
-        _passwordTF.placeholder = @"请输入密码";
+        _passwordTF.layer.cornerRadius = 5;
+        _passwordTF.layer.borderWidth = 1;
+        _passwordTF.layer.borderColor = [UIColor whiteColor].CGColor;
+        _passwordTF.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, height)];
+        _passwordTF.leftViewMode = UITextFieldViewModeAlways;
+        _passwordTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入密码" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+        
         
         _loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(kPaddingLR, CGRectGetMaxY(_passwordTF.frame)+kPaddingTB, width, height)];
         _loginBtn.backgroundColor = [UIColor redColor];
@@ -84,8 +93,6 @@ const CGFloat kPaddingTB = 20; ///上下控件的间隔距离
 
 #pragma mark -- Button Action
 -(void)loginAction{
-    NSLog(@"登录。。");
-   
     
     if (self.loginBlock) {
         self.loginBlock(self.userNameTF.text, self.passwordTF.text);
@@ -125,13 +132,23 @@ const CGFloat kPaddingTB = 20; ///上下控件的间隔距离
         CGFloat width = frame.size.width;
         _userNameTF = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, width, height)];
         _userNameTF.textColor = [UIColor whiteColor];
-        _userNameTF.placeholder = @"请输入用户名";
+        _userNameTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入用户名" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+        _userNameTF.layer.borderColor = [UIColor whiteColor].CGColor;
+        _userNameTF.layer.borderWidth = 1;
+        _userNameTF.layer.cornerRadius = 5;
+        _userNameTF.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, height)];
+        _userNameTF.leftViewMode = UITextFieldViewModeAlways;
         [self addSubview:_userNameTF];
         
         CGFloat y = CGRectGetMaxY(_userNameTF.frame) + 5;
         _passwordTF = [[UITextField alloc] initWithFrame:CGRectMake(0, y, width, height)];
         _passwordTF.textColor = [UIColor whiteColor];
-        _passwordTF.placeholder = @"请输入密码";
+        _passwordTF.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入密码" attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+        _passwordTF.layer.borderColor = [UIColor whiteColor].CGColor;
+        _passwordTF.layer.borderWidth = 1;
+        _passwordTF.layer.cornerRadius = 5;
+        _passwordTF.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, height)];
+        _passwordTF.leftViewMode = UITextFieldViewModeAlways;
         [self addSubview:_passwordTF];
         
         y = CGRectGetMaxY(_passwordTF.frame) + 5;
